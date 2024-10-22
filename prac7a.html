@@ -1,0 +1,37 @@
+<html> 
+<head> 
+    <title>Odd and Even Numbers</title> 
+</head> 
+<body> 
+    <h3>Name: Shaktisinh Raolji</h3> 
+    <h3>220410116110</h3> 
+    <h1>Odd and Even Number Checker</h1> 
+    <p>Enter two numbers:</p> 
+    <input type="number" id="num1" placeholder="Enter number 1">     
+    <input type="number" id="num2" placeholder="Enter number 2"> 
+    <br><br> 
+    <button onclick="findOddEven()">Find Odd and Even 
+Numbers</button> 
+    <h2>Results:</h2> 
+    <p id="result"></p> 
+    <script> 
+        function findOddEven() { 
+            var num1 = document.getElementById("num1").value;             
+            var num2 = document.getElementById("num2").value;             
+            var result = "Odd numbers: "; 
+            for (var i = Math.min(num1, num2); i <= Math.max(num1,num2); i++) { 
+                if (i % 2 === 1) {                     
+                    result += i + " "; 
+                } 
+            }  
+            result += "<br>Even numbers: "; 
+            for (var i = Math.min(num1, num2); i <= Math.max(num1,num2); i++) { 
+                if (i % 2 === 0) {                     
+                    result += i + " "; 
+                } 
+            } 
+            document.getElementById("result").innerHTML = result; 
+        } 
+    </script> 
+</body> 
+</html> 

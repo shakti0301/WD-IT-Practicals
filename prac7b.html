@@ -1,0 +1,21 @@
+<html> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initialscale=1.0"> 
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"> 
+    <title>cursormove</title> 
+    <script>  function move() { 
+            element = document.getElementById("move");             
+            document.onmousemove = function getxy() {                 
+                element.style.marginLeft = event.clientX;                
+                element.style.marginTop = event.clientY; 
+            } 
+        } 
+    </script> 
+</head> 
+<body onload="move()"> 
+    <h3>Name: Shaktisinh Raolji</h3> 
+    <h3>220410116110</h3> 
+    <div id="move">click here to move</div> 
+</body> 
+</html> 

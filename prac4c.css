@@ -1,0 +1,27 @@
+/* CSS for custom bullets */ 
+.custom-list {     
+    list-style: none;     
+    padding: 0; 
+} 
+.custom-list li {     
+    margin-bottom: 10px; 
+} 
+/* Square Bullet */ .square-bullet:before { 
+    content: "\25A0"; /* Unicode character for a solid square */     
+    margin-right: 5px;     
+    font-size: 20px; 
+} 
+/* Circle Bullet */ .circle-bullet:before { 
+    content: "\25CF"; /* Unicode character for a solid circle */     
+    margin-right: 5px;     
+    font-size: 20px; 
+} 
+/* Image Bullet */ .image-bullet:before {     
+    content: "";     
+    margin-right: 10px;     
+    display: inline-block; 
+    width: 20px; /* Adjust the image width as needed */     
+    height: 20px; /* Adjust the image height as needed */     
+    background-image: url("1.jpg"); /* Provide the path to your image */     
+    background-size: cover; 
+} 

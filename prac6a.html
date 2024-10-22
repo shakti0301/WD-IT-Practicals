@@ -1,0 +1,52 @@
+<html> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initialscale=1.0"> 
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"> 
+    <title>calculator</title>     <script type="text/javascript">         
+    function add() {             
+        let x, y, sum; 
+            x = document.getElementById("a").value;             
+            y = document.getElementById("b").value;            
+             sum = parseInt(x) + parseInt(y); 
+            document.getElementById("result").value = sum; 
+        } 
+        function sub() {             let x, y, sum; 
+            x = document.getElementById("a").value;             
+            y = document.getElementById("b").value;             
+            sum = parseInt(x) - parseInt(y); 
+            document.getElementById("result").value = sum; 
+        } 
+        function multiply() {             let x, y, sum; 
+            x = document.getElementById("a").value;             
+            y = document.getElementById("b").value;            
+             
+            sum = parseInt(x) * parseInt(y); 
+            document.getElementById("result").value = sum; 
+        } 
+        function divide() {             let x, y, sum; 
+            x = document.getElementById("a").value;             
+            y = document.getElementById("b").value;             
+            if (y == 0) { 
+                alert("value of b should not be zero"); 
+            } 
+            sum = parseInt(x) / parseInt(y); 
+            document.getElementById("result").value = sum; 
+        } 
+    </script> 
+</head> 
+<body> 
+    <h3>Name: Shaktisinh Raolji</h3>    
+    <h3>220410116110</h3>     
+    a: <input type="text" id="a"> 
+    </br> 
+    b: <input type="text" id="b"> 
+    </br> 
+    result:<input type="text" id="result"> 
+    </br> 
+    <button onclick="add()">Add</button> 
+    <button onclick="sub()">Sub</button> 
+    <button onclick="multiply()">multiply</button> 
+    <button onclick="divide()">divide</button> 
+</body> 
+</html> 

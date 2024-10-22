@@ -1,0 +1,19 @@
+<html> 
+<head> 
+    <title> Practical 8</title> 
+    <script> 
+        function capitalize() { 
+            var t1 = document.getElementById("text1").value;             
+            var t2 = document.getElementById("text2");            
+            t2.innerHTML = t1.charAt(0).toUpperCase() + t1.slice(1); 
+        } 
+    </script> 
+</head> 
+<body> 
+    <h3>Name: Shaktisinh Raolji</h3> 
+    <h5>Enter a string to convert the first letter in upper case: </h5> 
+    <input type="text" id="text1"><br><br> 
+    <input type="button" value="Capitlize" id="click" onclick="capitalize()"><br> 
+    <h3 id=text2 style="text-transform: capitalize;"></h3> 
+</body> 
+</html> 
